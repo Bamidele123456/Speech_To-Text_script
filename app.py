@@ -8,9 +8,7 @@ def record_text():
         try:
             with sr.Microphone() as source2:
 
-                # wait for a second to let the recognizer
-                # adjust the energy threshold based on
-                # the surrounding noise level
+
                 r.adjust_for_ambient_noise(source2, duration=0.2)
 
                 # listens for the user's input
